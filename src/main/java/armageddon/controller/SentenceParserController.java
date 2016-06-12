@@ -13,13 +13,17 @@ import org.springframework.web.bind.annotation.*;
 //@EnableAutoConfiguration
 public class SentenceParserController {
 
-    BarclayBotParser barclayBotParser=new BarclayBotParser();
+    static BarclayBotParser barclayBotParser=new BarclayBotParser();
 
-    BarclayBotRepository barclayBotRepository = new BarclayBotRepository();
+    static  BarclayBotRepository barclayBotRepository = new BarclayBotRepository();
 
     @RequestMapping("/createSession/{userId}")
     @ResponseBody
     String createSession(@PathVariable String userId) {
+        return getSessionId(userId);
+    }
+
+    public static String getSessionId(@PathVariable String userId) {
         return barclayBotRepository.createSessionForUser(userId);
     }
 
@@ -32,6 +36,10 @@ public class SentenceParserController {
     @RequestMapping("/getAction/{sessionId}")
     @ResponseBody
     String getAction(@PathVariable String sessionId, @RequestBody String content) {
+        return getActionString(sessionId, content);
+    }
+
+    public static String getActionString(String sessionId, String content) {
         try {
             content = content.toLowerCase();
             Communication lastCommunication = barclayBotRepository.getLastCommunication(sessionId);

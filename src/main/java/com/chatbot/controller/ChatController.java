@@ -1,5 +1,6 @@
 package com.chatbot.controller;
 
+import armageddon.RuleEngine;
 import com.chatbot.model.answer.Answer;
 //import com.chatbot.model.core.Brain;
 import com.chatbot.model.core.Chatbot;
@@ -27,6 +28,8 @@ public class ChatController {
 
     public ChatController() throws Exception {
 		chatbot = new Chatbot();
+		RuleEngine.initiateEngine();
+
 
     }
 
@@ -73,6 +76,7 @@ public class ChatController {
 	public String addAnswer(@ModelAttribute("Answer")Answer a, ModelMap model)
 	{
 		model.addAttribute("sentence", a.getSentence());
+
 		chatbot.addUserAnswer(a.getSentence());
 		return "redirect:/";
 	}

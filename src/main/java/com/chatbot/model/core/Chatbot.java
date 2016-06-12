@@ -1,5 +1,6 @@
 package com.chatbot.model.core;
 
+import armageddon.controller.SentenceParserController;
 import com.chatbot.model.answer.TypeOfSentence;
 import com.chatbot.model.capabilities.PersonalityId;
 import com.chatbot.model.dictionary.GrammaPerson;
@@ -37,7 +38,8 @@ public class Chatbot {
 //    public Brain brain;
 //    private User user;
     private String chatbotName = "Andrew";
-    private Conversation conversation = new Conversation(chatbotName);
+    private Conversation conversation = new Conversation("Aditya");
+    private String response="Please try agian";
 //
 //    public Chatbot(Brain brain) {
 //        this.brain = brain;
@@ -718,10 +720,12 @@ public class Chatbot {
 
     public void addUserAnswer(String s) {
         conversation.addChatbotAnswerToCourse(s);
+        String sessionId = SentenceParserController.getSessionId("Aditya");
+        response=  SentenceParserController.getActionString(sessionId, s);
     }
 
     public void answer() throws Exception {
-        conversation.addChatbotAnswerToCourse("Hello");
+        conversation.addChatbotAnswerToCourse(response);
 
         conversation.chatLevelUp();
     }

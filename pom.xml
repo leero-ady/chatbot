@@ -99,7 +99,26 @@
 			<artifactId>spring-context</artifactId>
 			<version>4.0.3.RELEASE</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.apache.opennlp</groupId>
+			<artifactId>opennlp-uima</artifactId>
+			<version>1.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.opennlp</groupId>
+			<artifactId>opennlp-tools</artifactId>
+			<version>1.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.jazzy</groupId>
+			<artifactId>jazzy</artifactId>
+			<version>0.5.2-rtext-1.4.1-2</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
@@ -141,8 +160,17 @@
 			<artifactId>mongo-java-driver</artifactId>
 			<version>2.13.0-rc1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-compiler</artifactId>
+			<version>${drools.version}</version>
+		</dependency>
 
 	</dependencies>
+	<properties>
+		<drools.version>6.2.0.Final</drools.version>
+		<jbpm.version>6.2.0.Final</jbpm.version>
+	</properties>
 	<build>
 		<finalName>Chatbot</finalName>
 		<plugins>

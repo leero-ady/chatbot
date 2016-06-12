@@ -1,7 +1,7 @@
 package com.chatbot.controller;
 
 import com.chatbot.model.answer.Answer;
-import com.chatbot.model.core.Brain;
+//import com.chatbot.model.core.Brain;
 import com.chatbot.model.core.Chatbot;
 import com.chatbot.model.user.PersonalityType;
 import org.slf4j.Logger;
@@ -26,7 +26,7 @@ public class ChatController {
 	private Chatbot chatbot;
 
     public ChatController() throws Exception {
-		chatbot = new Chatbot(new Brain());
+		chatbot = new Chatbot();
 
     }
 
@@ -38,7 +38,7 @@ public class ChatController {
 			/*String lastAnswer = chatbot.getLastAnswer();*/
 			/*chatbot.updateInformationAboutUser(lastAnswer);*/
 			chatbot.answer();
-            log.trace(chatbot.getChatbotName());
+            //log.trace(chatbot.getChatbotName());
 			
 		}
 		model.addAttribute("answers",chatbot.getConversationCourse());
@@ -65,11 +65,9 @@ public class ChatController {
 
 	@RequestMapping(value = "/reload", method = RequestMethod.GET)
 	public String reload() throws IOException, SQLException {
-		chatbot = new Chatbot(new Brain());
+		chatbot = new Chatbot();
 		return "redirect:/";
 	}
-
-
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
 	public String addAnswer(@ModelAttribute("Answer")Answer a, ModelMap model)

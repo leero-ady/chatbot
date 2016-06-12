@@ -1,0 +1,38 @@
+welcome hi
+welcome hello
+welcome hey
+welcome good morning
+welcome good evening
+welcome good day
+welcome good night
+welcome greetings!
+status how are you ?
+status how are you doing ?
+status how is today ?
+status how is it going ?
+statusreply fine
+statusreply good
+statusreply thanks
+endconversation bye
+endconversation nothing bye
+endconversation see you
+addresschangequery  please help assisting change address
+addresschangequery  change address
+addresschangequery  change address
+addresschangequery  change communication address
+addresschangequery  let know procedure changing address
+addresschangequery  assist changing address
+addresschangequery  please assist changing address
+phoneshowquery  show phone number
+phonechangequery  please help assisting change phone number
+phonechangequery  change phone number
+phonechangequery  change phone number
+phonechangequery  change phone details
+phonechangequery  let know procedure changing phone number
+phonechangequery  assist changing phone number
+emailchangequery  please help assisting change
+emailchangequery  change email
+emailchangequery  change email
+emailchangequery  change email
+emailchangequery  let know procedure changing email
+emailchangequery  assist changing email

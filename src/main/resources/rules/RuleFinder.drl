@@ -1,6 +1,6 @@
 package com.barclaycardus.armageddon;
-import com.barclaycardus.armageddon.controller.Communication;
-import com.barclaycardus.armageddon.controller.validator.ContentValidator;
+import armageddon.controller.Communication;
+import armageddon.controller.validator.ContentValidator;
 rule "Find Rule"
 when
 $request : Communication()
@@ -14,10 +14,12 @@ if("welcome".equals($request.getAction())){
 }else if("endconversation".equals($request.getAction())){
       $request.setReply("Have a nice day.");
  }else if($request.getPreviousCommunication()!=null){
-    if(!"INVALID".equals($request.getAction())){
+    if(!"INVALID".equals($request.getAction()))
+    {
         $request.setPreviousCommunication(null);
         update($request);
-    }else if("CONFIRM_EXIT".equals($request.getPreviousCommunication().getAction())){
+    }
+    else if("CONFIRM_EXIT".equals($request.getPreviousCommunication().getAction())){
         if($request.getContent().toLowerCase().contains("no")){
             $request.setReply("Thanks for using chatbot. Have a nice day.");
         }else{

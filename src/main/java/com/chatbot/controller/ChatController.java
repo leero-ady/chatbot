@@ -33,7 +33,7 @@ public class ChatController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView student(ModelMap model) throws Exception {
 
-		if (chatbot.isUserTurn()) 
+		if (chatbot.isUserTurn())
 		{
 			String lastAnswer = chatbot.getLastAnswer();
 			chatbot.updateInformationAboutUser(lastAnswer);

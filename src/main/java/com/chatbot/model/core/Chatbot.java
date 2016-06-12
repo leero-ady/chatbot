@@ -40,7 +40,7 @@ public class Chatbot {
     private Logger log = LoggerFactory.getLogger(Chatbot.class);
     public Brain brain;
     private User user;
-    private String chatbotName = "Eustachy";
+    private String chatbotName = "Andrew";
     private Conversation conversation = new Conversation(chatbotName);
 
     public Chatbot(Brain brain) {

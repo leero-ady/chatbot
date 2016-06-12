@@ -60,16 +60,14 @@ public class Conversation {
 
 	public String randomWelcomePhrase(String name)
 	{
-		String [] welcome = {"Witaj! Jestem empatycznym chatbotem. Nazywam się <name>, a Ty?", "Dzień dobry, jestem Chatbot <name>, jak Ci na imię?",
-				"Hej, zapraszam do rozmowy. Mam na imię <name>, a Ty?", "Witaj, jestem Chatbotem. Chętnie z Tobą porozmawiam. Jak masz na imię?" };
-		int r = (int) (Math.random()*welcome.length);
-		return welcome[r].replace("<name>", name);
+		String welcome = "Hi <name>, how may I help you?" ;
+		return welcome.replace("<name>", name);
 	}
 
 	
 
 	public Conversation() {
-		course.add(randomWelcomePhrase("Mieczysław"));
+		course.add(randomWelcomePhrase("Aditya"));
 	}
 	
 	public Conversation(String name) {

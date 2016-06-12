@@ -5,8 +5,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-	<head> 
-	<h1>Chatbot </h1>
+	<head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="description" content="Hi, How may I help you?" />
 	<meta name="keywords" content="chatbot" />
@@ -35,13 +34,13 @@
 		</form:form>
 --%>
 		<form:form method="GET" action="/reload" >
-				<input class="reload" type="submit" name="reload" value="" title="Nowa rozmowa"/>
+				<input class="reload" type="submit" name="reload" value="" title="Reload"/>
 			</form:form>
 		</div>
 
 	<br>
 	<header>
-		<title>Chatbot Eustachy</title>
+		<title>Chatbot Andrew</title>
 	</header>
 		<section id="main">
 			

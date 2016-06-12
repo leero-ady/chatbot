@@ -1,0 +1,32 @@
+# Maven-generated files
+**/target
+target/
+
+# Eclipse-generated files
+**/.settings
+**/.project
+**/.classpath
+**/.checkstyle
+**/bin
+
+# Idea-generated files
+**/*.iml
+**/.idea
+**/workspace.xml
+**/.idea/*.xml
+**/atlassian-ide-plugin.xml
+
+# FitNesse-generated files
+**/ErrorLogs
+**/testResults
+**/RecentChanges
+**/testProgress
+
+#graph_plotter_generated_files
+**/graph_plotter*.png
+**/graph_plotter*.txt
+
+# Never push any logs
+**/logs/*.log
+
+**/*.war

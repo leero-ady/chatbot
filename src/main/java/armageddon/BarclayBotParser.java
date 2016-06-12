@@ -18,20 +18,20 @@ import java.util.Set;
 @Component
 public class BarclayBotParser {
 
-	public static String URL = "G:\\Code\\armageddon\\armageddon\\barclay-bot-parser\\src\\main\\resources\\";
+	public static String URL = "C:\\Users\\welcome\\Documents\\Chatbot-master\\src\\main\\resources\\";
 	DocumentCategorizerME classificationME;
 	JazzySpellChecker jazzySpellChecker;
 
-	public BarclayBotParser() {
-		try {
-			BarclaysBotTrainer barclaysBotTrainer = new BarclaysBotTrainer();
-			String classificationModelFilePath = URL + "en-barclay_bot.bin";
-			classificationME = new DocumentCategorizerME(new DoccatModel(
-                    new FileInputStream(classificationModelFilePath)));
-			jazzySpellChecker = new JazzySpellChecker();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		public BarclayBotParser() {
+			try {
+				BarclaysBotTrainer barclaysBotTrainer = new BarclaysBotTrainer();
+				String classificationModelFilePath = URL + "en-barclay_bot.bin";
+				classificationME = new DocumentCategorizerME(new DoccatModel(
+						new FileInputStream(classificationModelFilePath)));
+				jazzySpellChecker = new JazzySpellChecker();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 	}
 
 	public static void main(String[] args) throws Exception {

@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 
 public class BarclaysBotTrainer {
 	
-	public static String URL = "G:\\Code\\armageddon\\armageddon\\barclay-bot-parser\\src\\main\\resources\\";
+	public static String URL = "C:\\Users\\welcome\\Documents\\Chatbot-master\\src\\main\\resources\\";
 	
 	public BarclaysBotTrainer() {
 		try{

@@ -4,7 +4,6 @@ import com.swabunga.spell.engine.SpellDictionaryHashMap;
 import com.swabunga.spell.engine.Word;
 import com.swabunga.spell.event.*;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -29,9 +28,8 @@ public class JazzySpellChecker implements SpellCheckListener {
  private static SpellDictionaryHashMap dictionaryHashMap;
   
  static{
-  File dict = new File(BarclayBotParser.URL + "dictionary.txt");
   try {
-	  dictionaryHashMap = new SpellDictionaryHashMap(dict);
+	  dictionaryHashMap = new SpellDictionaryHashMap(BarclaysBotUtil.getFile("dictionary.txt"));
   } catch (FileNotFoundException e) {
    e.printStackTrace();
   } catch (IOException e) {

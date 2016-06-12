@@ -720,8 +720,8 @@ public class Chatbot {
 
     public void addUserAnswer(String s) {
         conversation.addChatbotAnswerToCourse(s);
-        String sessionId = SentenceParserController.getSessionId("Aditya");
-        response=  SentenceParserController.getActionString(sessionId, s);
+
+        response=  SentenceParserController.getActionString("123", s);
     }
 
     public void answer() throws Exception {

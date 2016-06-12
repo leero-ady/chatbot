@@ -1,5 +1,5 @@
 rule "Address change"
 agenda-group "setAddress"
 then
-armageddon.QueryResponse.setResponse("Please Provide your Address");
+com.barclaycardus.armageddon.QueryResponse.setResponse("Please Provide your Address");
 end

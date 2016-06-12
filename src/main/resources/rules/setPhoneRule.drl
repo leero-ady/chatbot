@@ -1,5 +1,5 @@
 rule "Phone change"
 agenda-group "setPhone"
 then
-armageddon.QueryResponse.setResponse("Please Provide your Phone Number");
+com.barclaycardus.armageddon.QueryResponse.setResponse("Please Provide your Phone Number");
 end

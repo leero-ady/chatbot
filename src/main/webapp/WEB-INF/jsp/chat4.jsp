@@ -40,7 +40,7 @@
 
 	<br>
 	<header>
-		<title>Chatbot Andrew</title>
+		<title>Barclays Chatbot</title>
 	</header>
 		<section id="main">
 			

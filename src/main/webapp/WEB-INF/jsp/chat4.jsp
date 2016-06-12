@@ -6,7 +6,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head> 
-	<title>Chatbot Armageddon</title>
+	<h1>Chatbot </h1>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="description" content="Hi, How may I help you?" />
 	<meta name="keywords" content="chatbot" />

@@ -35,8 +35,8 @@ public class ChatController {
 
 		if (chatbot.isUserTurn())
 		{
-			String lastAnswer = chatbot.getLastAnswer();
-			chatbot.updateInformationAboutUser(lastAnswer);
+			/*String lastAnswer = chatbot.getLastAnswer();*/
+			/*chatbot.updateInformationAboutUser(lastAnswer);*/
 			chatbot.answer();
             log.trace(chatbot.getChatbotName());
 			

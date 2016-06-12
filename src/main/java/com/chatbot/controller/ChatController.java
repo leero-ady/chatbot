@@ -46,7 +46,7 @@ public class ChatController {
 		return new ModelAndView("chat4", "Answer", new Answer());
 	}
 
-	@RequestMapping(value = "/raport", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/raport", method = RequestMethod.GET)
 	public ModelAndView raport() throws Exception {
 
 		ModelAndView mav = new ModelAndView("raport");
@@ -60,7 +60,7 @@ public class ChatController {
 		mav.addObject("topics",chatbot.getUser().getTopics());
 
 		return mav;
-	}
+	}*/
 
 
 	@RequestMapping(value = "/reload", method = RequestMethod.GET)

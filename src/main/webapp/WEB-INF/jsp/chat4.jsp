@@ -30,10 +30,10 @@
 	<body onload="scrollBox();
 					keepFocus();">
 	<div class="menu">
-		<form:form method="GET" action="/raport" target="_blank">
+		<%--<form:form method="GET" action="/raport" target="_blank">
 			<input class="raport" type="submit" name="raport" value="" title="Raport"/>
 		</form:form>
-
+--%>
 		<form:form method="GET" action="/reload" >
 				<input class="reload" type="submit" name="reload" value="" title="Nowa rozmowa"/>
 			</form:form>
@@ -61,12 +61,12 @@
 		
 					<form:form class="submit" modelAttribute="Answer" method="POST" action="/" >
 						<form:input class="form-control" path="sentence" id="answerArea"/>
-						<input class="btn" type="submit" value="Wyślij"/>
+						<input class="btn" type="submit" value="Submit"/>
 					</form:form>
 			</div>
 
 			<div class="footer">
-				Izabela Kułakowska <a href="mailto:%20izabel.kulak@gmail.com?subject=Temat&amp;" style="color:slategrey">izabel.kulak@gmail.com</a> Praca magisterska AGH 2015, Promotor: dr hab. Adrian Horzyk
+
 			</div>
 		</section>
 

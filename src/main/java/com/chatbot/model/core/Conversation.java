@@ -60,8 +60,8 @@ public class Conversation {
 
 	public String randomWelcomePhrase(String name)
 	{
-		String welcome = "Hi <name>, how may I help you?" ;
-		return welcome.replace("<name>", name);
+		String welcome = "Hi, how may I help you?" ;
+		return welcome/*.replace("<name>", name)*/;
 	}
 
 	

@@ -1,5 +1,0 @@
-rule "Phone change"
-agenda-group "setPhone"
-then
-com.barclaycardus.armageddon.QueryResponse.setResponse("Please Provide your Phone Number");
-end

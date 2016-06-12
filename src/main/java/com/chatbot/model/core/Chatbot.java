@@ -31,7 +31,6 @@ import static com.chatbot.model.util.PreprocessString.removePunctuationMarks;
 import static com.chatbot.model.util.PreprocessString.replacePolishCharsAndLowerCase;
 
 @Getter
-@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Chatbot {
 
     private Logger log = LoggerFactory.getLogger(Chatbot.class);

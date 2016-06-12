@@ -6,9 +6,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head> 
-	<title>Chatbot Eustachy</title>
+	<title>Chatbot Armageddon</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<meta name="description" content="Chatbot rozmawiający o problemach interpersonalnych i doświadczeniach życiowych" />
+	<meta name="description" content="Hi, How may I help you?" />
 	<meta name="keywords" content="chatbot" />
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>

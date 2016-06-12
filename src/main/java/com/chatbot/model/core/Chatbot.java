@@ -725,40 +725,8 @@ public class Chatbot {
     }
 
     public void answer() throws Exception {
+        conversation.addChatbotAnswerToCourse("Hello");
 
-        int chatlevel = conversation.getChatLevel();
-        String answer ="";
-        switch (chatlevel) {
-            case 1:
-                catchUserName();
-                answer = "Witaj " + getUserName() + ". Na początku naszej rozmowy chciałbym zadać Ci kilka pytań. Ile masz lat?";
-                conversation.addChatbotAnswerToCourse(answer);
-                break;
-            case 2:
-                catchUserAge();
-                answer = "";
-                if (user.getAge() == 0) {
-                    answer = "Nie odpowiadaj jeśli nie chcesz. "+brain.getRandomStandardAnswer("2");
-                }
-                else {
-                    answer = brain.getRandomStandardAnswer("2");
-                }
-                conversation.addChatbotAnswerToCourse(answer);
-                break;
-            case 3:
-                catchUserMood();
-                answer = commentMood();
-                conversation.addChatbotAnswerToCourse(answer);
-                break;
-        /*case 4:
-            catchTopic();
-			conversation.addChatbotAnswerToCourse(prepareAnswer(chatlevel, 0, conversation.getTopicID()));
-			break;*/
-            default:
-                answer = prepareAnswer(conversation.getLastAnswer());
-                conversation.addChatbotAnswerToCourse(answer);
-                break;
-        }
         conversation.chatLevelUp();
     }
 

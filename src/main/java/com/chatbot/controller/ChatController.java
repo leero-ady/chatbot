@@ -2,9 +2,7 @@ package com.chatbot.controller;
 
 import armageddon.RuleEngine;
 import com.chatbot.model.answer.Answer;
-//import com.chatbot.model.core.Brain;
 import com.chatbot.model.core.Chatbot;
-import com.chatbot.model.user.PersonalityType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Scope;
@@ -48,22 +46,6 @@ public class ChatController {
 
 		return new ModelAndView("chat4", "Answer", new Answer());
 	}
-
-	/*@RequestMapping(value = "/raport", method = RequestMethod.GET)
-	public ModelAndView raport() throws Exception {
-
-		ModelAndView mav = new ModelAndView("raport");
-			List<PersonalityType> personalities = chatbot.getUser().getPersonality().getTypes();
-
-		mav.addObject("personalityTypes",personalities);
-		mav.addObject("name",chatbot.getUser().getName());
-		mav.addObject("age",chatbot.getUser().getAge());
-		mav.addObject("gender",chatbot.getUser().getGender());
-		mav.addObject("lcu",chatbot.getUser().getLcu());
-		mav.addObject("topics",chatbot.getUser().getTopics());
-
-		return mav;
-	}*/
 
 
 	@RequestMapping(value = "/reload", method = RequestMethod.GET)
